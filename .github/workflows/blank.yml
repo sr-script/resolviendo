@@ -12,6 +12,6 @@ jobs:
     steps:
       - name: Hacer solicitdud a la pagina esa fea cochina q no me deja entrar malditasea
         run: |
-          response=$(curl -s -H "Content-Type: application/json" -X GET "https://actions.ctf.cert.unlp.edu.ar")
+          response=$(curl -s -H "Content-Type: application/json" -H "X-CERTUNLP: flag" -X GET "https://actions.ctf.cert.unlp.edu.ar")
           echo "Respuesta del servidor feo ese:"
           echo "$response"
