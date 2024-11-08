@@ -12,6 +12,6 @@ jobs:
     steps:
       - name: Hacer solicitdud a la pagina esa fea cochina q no me deja entrar malditasea
         run: |
-          curl -X GET "https://actions.ctf.cert.unlp.edu.ar" > resuestaUwU.txt
-          echo "Respuesta del servidor cochino feo ese:"
-          cat resuestaUwU.txt
+          response=$(curl -s -H "Content-Type: application/json" -X GET "https://actions.ctf.cert.unlp.edu.ar")
+          echo "Respuesta del servidor feo ese:"
+          echo "$response"
