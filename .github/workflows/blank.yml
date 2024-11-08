@@ -1,0 +1,17 @@
+name: Resolviendo el coso de Git 2 jeej
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  solve:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Hacer solicitdud a la pagina esa fea cochina q no me deja entrar malditasea
+        run: |
+          curl -X GET "https://actions.ctf.cert.unlp.edu.ar" > resuestaUwU.txt
+          echo "Respuesta del servidor cochino feo ese:"
+          cat resuestaUwU.txt
