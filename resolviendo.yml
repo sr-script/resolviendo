@@ -1,0 +1,17 @@
+name: Resolviendo Git 2: actions
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  solve:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Hacer request a la pagina cochina esa que no me deja entrar
+        run: |
+          curl -X GET "https://actions.ctf.cert.unlp.edu.ar" > result.txt
+          echo "Respuesta del servidor cochino feo:"
+          cat respuesta.txt
