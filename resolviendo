@@ -1,0 +1,16 @@
+name: Resolver Git 2: Actions jejeje
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  solve:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Hacer la solicitud al cochino link q no me deja entrar
+        run: |
+          curl -X GET "https://actions.ctf.cert.unlp.edu.ar" > result.txt
+          echo "Respuesta del servidor feo ese:"
+          cat respuesta.txt
